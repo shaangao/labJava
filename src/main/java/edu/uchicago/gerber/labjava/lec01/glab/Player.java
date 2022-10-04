@@ -4,11 +4,11 @@ import java.util.Date;
 
 public class Player  {
 
-    private String name;
-    private double money;
-    private Date inception;
+    private String name; // obj
+    private double money;  // primitive
+    private Date inception; // obj
 
-    public Player(String name, double money) {
+    public Player(String name, double money) {  // constructor
         this.name = name;
         this.money = money;
         this.inception = new Date();
@@ -17,7 +17,7 @@ public class Player  {
 
     public String getName() {
         return name;
-    }
+    }  // command + N: getters / setters
 
     public void setName(String name) {
         this.name = name;

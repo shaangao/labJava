@@ -16,9 +16,14 @@ public class SimpleBinToDigital {
     public static void main(String[] args) {
 
 
-        String strBinary = "1001 0001";
+        String strBinary = "0001 0011";  // 19
 
                             //2^2     //2^1      // 2^0
+                            // first digit: sign bit -- 0 for positive, 1 for negative
+
+        // 1111 1111: -1
+        // 1111 1110: -2
+
 
         //strip out any spaces
         strBinary = strBinary.replace(" ", "");

@@ -37,7 +37,7 @@ public class PromotionAndCastingPrimitives {
 		//downcasting loses precsion
 
 		//truncate - not round
-		int nAnswer1 = (int)56.9356974;
+		int nAnswer1 = (int)56.9356974;  // become 56 instead of 57
 //
 //
 //		//long lAnswer1 = Math.max(3.856, 98798798);
@@ -58,8 +58,8 @@ public class PromotionAndCastingPrimitives {
         //in the following example, 51 (an int) will be cast to a double
         double dVal = 51 / 24.89989;
 
-        float fValue =   89393.0008f;
-        long lValme = 893938948934893498L;
+        float fValue =   89393.0008f;  // lower case / upper case doesn't matter
+        long lValue = 893938948934893498L; // case doesn't matter as well, but lower case "l" is bad styler bc it looks like 1
 
 
         //EXPLICIT CASTING (AKA DOWNCASTING) --will result in loss of precision
@@ -87,8 +87,8 @@ public class PromotionAndCastingPrimitives {
 
 
 		int nNumber = 393;
-		byte yNumber = (byte) nNumber;
-		System.out.println(yNumber);
+		byte yNumber = (byte) nNumber; // byte can only store -128 - 128 >> downcasting: only the last 8 bits remain
+		System.out.println(yNumber); // -119
 
 		System.out.println(Integer.toBinaryString(nNumber));
 

@@ -110,7 +110,7 @@ public class StringManipulation {
         String strSum = new String("");
 
 		for (int i = 0; i < 100; i++) {
-			strSum = strSum + i;
+			strSum = strSum + i;   // this creates 100 str objs! inefficient
 
 		}
 
@@ -118,7 +118,7 @@ public class StringManipulation {
         StringBuilder stringBuilder = new StringBuilder();
 
 		for (int nC = 0; nC < 100; nC++) {
-			stringBuilder.append(nC);
+			stringBuilder.append(nC);  // this is more efficient bc we only created 1 mutable obj
 		}
 		System.out.println(stringBuilder.toString());
 

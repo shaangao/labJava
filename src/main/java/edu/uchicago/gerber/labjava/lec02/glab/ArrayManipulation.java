@@ -12,7 +12,7 @@ public class ArrayManipulation {
 		//this is an array of bytes
 		byte[] yAges = new byte[5];
 		//the indices are from 0 to 4
-		//values are initialzed to zero
+		//values are initialized to zero
         System.out.println("printing values stored in yAges");
 		for(int nC = 0; nC < yAges.length; nC++) {
 			System.out.println(yAges[nC]);
@@ -66,7 +66,7 @@ public class ArrayManipulation {
 
         Rectangle[] recShapes =
 		{
-				new Rectangle(4,5,8,9),
+				new Rectangle(4,5,8,9),  // "new" returns memory addr
 				new Rectangle(7,1,9,12),
 				new Rectangle(8,16,1,3)
 	
@@ -134,7 +134,7 @@ public class ArrayManipulation {
 		
 		boolean[][] bAnswers = {
 			
-				new boolean[6],
+				new boolean[6], // an array of 6 bools
 				new boolean[9],
 				new boolean[3],
 				new boolean[8]
@@ -145,7 +145,7 @@ public class ArrayManipulation {
 		
 		
 		for (int nRow = 0; nRow < bAnswers.length; nRow++) {
-			for (int nCol = 0; nCol < bAnswers[nRow].length; nCol++) {
+			for (int nCol = 0; nCol < bAnswers[nRow].length; nCol++) { // check the len of each row
 				bAnswers[nRow][nCol] = ran.nextBoolean();
 			}
 			

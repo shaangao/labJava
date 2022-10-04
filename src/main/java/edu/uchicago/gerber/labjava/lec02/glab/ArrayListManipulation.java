@@ -3,6 +3,8 @@ package edu.uchicago.gerber.labjava.lec02.glab;
 import java.util.ArrayList;
 import java.awt.Rectangle;
 import java.util.List;
+// import java.lang.*  // imported by default
+
 
 public class ArrayListManipulation {
 
@@ -11,10 +13,10 @@ public class ArrayListManipulation {
 
 
 
-		//delcare a new arrayList and import from java.util
-		//here we're using the generic form so we're tellign the compiler that
+		//declare a new arrayList and import from java.util
+		//here we're using the generic form so we're telling the compiler that
 		//this data structure can ONLY hold strings
-		ArrayList<String> strNames = new ArrayList<>();
+		ArrayList<String> strNames = new ArrayList<>();  // size of the arraylist in "()". e.g., 20, [null], ...
 		
 		
 		//the nice thing about arrayLists is that their length is indeterminate
@@ -26,13 +28,11 @@ public class ArrayListManipulation {
 
 
 
-
-
-		
-//		//let's iterate over this ArrayList
-//		for (String str : strNames) {
-//			System.out.println(str);
-//		}
+		// type "iter" + command + j
+		//let's iterate over this ArrayList
+		for (String str : strNames) {
+			System.out.println(str);
+		}
 
 
 
@@ -54,7 +54,7 @@ public class ArrayListManipulation {
 		}
 		
 		System.out.println("-----------------------------");
-		strNames.add("Alice");
+		strNames.add("Alice");  // add/remove can only be done with arraylist, not array
 		strNames.add("Tiger");
 		
 		//wait...get rid of Tiger, Jan is allergic.

@@ -88,7 +88,7 @@ public class House implements Cloneable {
 
 	}
 
-	//satisfies the Clonable interface
+	//satisfies the Cloneable interface
     @Override
 	 public House clone() throws CloneNotSupportedException {
 		 	
@@ -105,7 +105,7 @@ public class House implements Cloneable {
 
 		return houClone;
 
-		  }
+	}
 
 
 	

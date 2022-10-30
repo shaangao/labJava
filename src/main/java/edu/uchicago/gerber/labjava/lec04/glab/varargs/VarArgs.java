@@ -28,7 +28,7 @@ public class VarArgs {
     //notice how the varargs argument is last!
     //once inside the method, the param Type... is treated as Type[]
     //so, int... becomes int[]
-	private static void sum(String strSum, int... nParams){
+	private static void sum(String strSum, int... nParams){      // but cannot use int[] here although both of them mean array!!
 		int nResult = 0;
 		System.out.print(strSum + " ");
 

@@ -15,18 +15,18 @@ public class PassBy  {
 
         int nNumber = 5;
         multByFive(nNumber);
-        System.out.println("nNumber: " + nNumber);
+        System.out.println("nNumber: " + nNumber);  // 5
 
 
         Rectangle recSquare = new Rectangle(1,1,10,10);
         //Ox67AB
         doubleRec(recSquare);
-        System.out.println("recSquare: " + recSquare);
+        System.out.println("recSquare: " + recSquare);  // java.awt.Rectangle[x=1,y=1,width=20,height=20]
 
     }
 
 
-    //when you pass primitives into methods in Java, the are passed by value, in other words - they are copied.
+    //when you pass primitives into methods in Java, they are passed by value, in other words - they are copied.
     private static void multByFive(int nParam){
         nParam  = nParam * 5;
         System.out.println(nParam);
@@ -37,7 +37,7 @@ public class PassBy  {
     //when you pass an Object into a method, you are passing by reference, which means you're giving the method the
     //memory address of the object
     private static void doubleRec(Rectangle recParam){
-        recParam.setSize(recParam.width * 2, recParam.height * 2);
+        recParam.setSize(recParam.width * 2, recParam.height * 2);  // recParam mutated
 
     }
 
